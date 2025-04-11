@@ -36,7 +36,8 @@ jobs:
 
        - name: Setup Terraform with specified version on the runner
          uses: hashicorp/setup-terraform@v2
-         
+         with:
+           terraform_version: 1.6.3
 
        - name: Terraform init
          id: init
@@ -52,9 +53,9 @@ jobs:
 
        - name: Terraform plan
          id: plan
-         run: terraform plan -no-color -input=false -out planfile
+         run: terraform plan -no-color -input=false -detailed-exitcode
          continue-on-error: true
 
        - name: Terraform plan status
          if: steps.plan.outcome == 'failure' 
-         run: exit 1
+         run: echo "Terraform plan failed ❌" && exit 1
