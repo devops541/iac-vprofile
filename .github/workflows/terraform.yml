@@ -57,5 +57,8 @@ jobs:
          continue-on-error: true
 
        - name: Terraform plan status
-         if: steps.plan.outcome == 'failure' 
-         run: exit 1
+         if: steps.plan.outcome == 'failure'
+         run: |
+           echo "Terraform plan failed. Displaying plan output log:"
+           cat planfile || echo "Plan file not created. Showing debug logs if available..."
+           exit 1
