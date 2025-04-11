@@ -37,6 +37,7 @@ terraform {
   }
 
   required_version = "~> 1.6.3"
+<<<<<<< HEAD
 }
 ##
 ##
@@ -50,3 +51,6 @@ terraform {
 ## Furkan_Alay
 ##
 >>>>>>> origin/stage
+=======
+}
+>>>>>>> stage
