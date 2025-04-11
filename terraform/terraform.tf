@@ -34,13 +34,3 @@ terraform {
 
   required_version = "~> 1.6.3"
 }
-##
-##
-## Furkan_Alay
-##
-##
-##
-##
-##
-##
-## Merhaba ben Furkan
