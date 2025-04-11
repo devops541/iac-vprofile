@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Projeme Hoşgeldiniz Aşağıdaki adımları takip ederek projeyi localinizde çalıştırabilirsiniz İyi çalışmalar.
 # "https://github.com/Furkan-Alay/GitopsProjem" ve "https://github.com/Furkan-Alay/GitopsProjem" buradaki resource kısmına gidip ayrı ayrı her ikisi için fork işlemini yapmanız gerekmektedir.
 # Daha sonra terminalinizi açıp SSH key oluşturmanız gerekmektedir. buradaki kodları sırayla terminale yazınız. 
@@ -27,6 +28,15 @@
 * cp -r iac-vprofile/ main-iac
 * cd iac-vprofile
 * git checkout stage
+=======
+# Terraform code 
+
+## Maintain vpc & eks with terraform for vprofile project
+
+## Tools required
+Terraform version 1.6.3
+
+>>>>>>> origin/stage
 ### Steps
 * terraform init
 * terraform fmt -check
@@ -34,3 +44,7 @@
 * terraform plan -out planfile
 * terraform apply -auto-approve -input=false -parallelism=1 planfile
 ####
+<<<<<<< HEAD
+=======
+#####
+>>>>>>> origin/stage

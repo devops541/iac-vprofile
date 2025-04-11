@@ -27,7 +27,11 @@ terraform {
   }
 
   backend "s3" {
+<<<<<<< HEAD
     bucket = "gitopsterrastate"
+=======
+    bucket = "vprofileaction5411"
+>>>>>>> origin/stage
     key    = "terraform.tfstate"
     region = "us-east-2"
   }
@@ -36,4 +40,8 @@ terraform {
 }
 ##
 ##
+<<<<<<< HEAD
 ##
+=======
+## Furkan_Alay
+>>>>>>> origin/stage
