@@ -41,7 +41,12 @@ terraform {
 ##
 ##
 <<<<<<< HEAD
+<<<<<<< HEAD
 ##
 =======
 ## Furkan_Alay
+>>>>>>> origin/stage
+=======
+## Furkan_Alay
+##
 >>>>>>> origin/stage
