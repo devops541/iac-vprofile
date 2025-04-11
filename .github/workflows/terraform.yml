@@ -57,5 +57,5 @@ jobs:
          continue-on-error: true
 
        - name: Terraform plan status
-         if: steps.plan.outcome == 'failure' 
+         if: failure()
          run: echo "Terraform plan failed ❌" && exit 1
