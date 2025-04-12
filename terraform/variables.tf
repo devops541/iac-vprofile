@@ -9,6 +9,4 @@ variable "clusterName" {
   type        = string
   default     = "vprofile-eks"
 }
-#
-# Furkan Alay
-# Hello World!
+## Merhaba
